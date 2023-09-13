@@ -27,15 +27,25 @@ body.dark {
   background-color: var(--primary-bg);
 }
 /* Header */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
 .toggle {
   display: flex;
-  justify-content: right;
+
   margin-right: 150px;
   padding-top: 4rem;
 }
 .toggle p {
   padding-top: 5px;
   margin-left: 10px;
+}
+.lang {
+  margin-left: 10px;
+  color: var(--head-color);
+  padding-top: 6px;
 }
 /* Navbar */
 .Navbar {

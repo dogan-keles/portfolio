@@ -45,67 +45,68 @@ export const langData = {
       birth: "Birth Date",
       city: "City",
       education: "Education",
-      educationDetails: "İstanbul Aydın University - Computer Engineering",
+      educationDetails:
+        "İstanbul Teknik Üniversitesi, Geomatik Mühendisliği, Lisans, 2022",
       position: "Job Prefs",
       aboutMe: "About Me",
       info: "Hi, I’m Doğan. I’m a Full-Stack developer. If you are looking for a Developer who to craft solid and scalable frontend products with great user experiences. Let’s shake hands with me!",
     },
 
-    projects: {
-      mainTitle: "Projects",
-      profileItems: [
-        {
-          id: 0,
-          img: project1,
-          title: "Project 1",
-          description:
-            "I will explain here what I want to talk about the project. This project was a very successful choice to express my functions in my run. Below are some of the special methods I use.",
-          methods: ["redux", "axios"],
-          gitLink: "https://github.com/gkhns89/insta-clone",
-          prLink: "https://github.com/gkhns89/insta-clone",
-        },
-        {
-          id: 1,
-          img: project2,
-          title: "Project 2",
-          description:
-            "I will explain here what I want to talk about the project. This project was a very successful choice to express my functions in my run. Below are some of the special methods I use.",
-          methods: ["redux", "axios", "react"],
-          gitLink: "https://github.com/gkhns89/insta-clone",
-          prLink: "https://github.com/gkhns89/insta-clone",
-        },
-        {
-          id: 2,
-          img: project3,
-          title: "Project 3",
-          description:
-            "I will explain here what I want to talk about the project. This project was a very successful choice to express my functions in my run. Below are some of the special methods I use.",
-          methods: ["redux", "axios", "react", "wordpress"],
-          gitLink: "https://github.com/gkhns89/insta-clone",
-          prLink: "https://github.com/gkhns89/insta-clone",
-        },
-        {
-          id: 3,
-          img: project4,
-          title: "S.S. Motaş",
-          description:
-            "I will explain here what I want to talk about the project. This project was a very successful choice to express my functions in my run. Below are some of the special methods I use.",
-          methods: ["Wordpress", "Visual Composer", "HTML", "php"],
-          gitLink: "https://github.com/gkhns89/",
-          prLink: "https://ssmotas.com",
-        },
-        {
-          id: 4,
-          img: project5,
-          title: "Cozido Burger",
-          description:
-            "I will explain here what I want to talk about the project. This project was a very successful choice to express my functions in my run. Below are some of the special methods I use.",
-          methods: ["Wordpress", "Visual Composer", "HTML", "php"],
-          gitLink: "https://github.com/gkhns89/",
-          prLink: "https://www.cozidoburger.com/",
-        },
-      ],
-    },
+    // projects: {
+    //   mainTitle: "Projects",
+    //   profileItems: [
+    //     {
+    //       id: 0,
+    //       img: project1,
+    //       title: "Project 1",
+    //       description:
+    //         "I will explain here what I want to talk about the project. This project was a very successful choice to express my functions in my run. Below are some of the special methods I use.",
+    //       methods: ["redux", "axios"],
+    //       gitLink: "https://github.com/gkhns89/insta-clone",
+    //       prLink: "https://github.com/gkhns89/insta-clone",
+    //     },
+    //     {
+    //       id: 1,
+    //       img: project2,
+    //       title: "Project 2",
+    //       description:
+    //         "I will explain here what I want to talk about the project. This project was a very successful choice to express my functions in my run. Below are some of the special methods I use.",
+    //       methods: ["redux", "axios", "react"],
+    //       gitLink: "https://github.com/gkhns89/insta-clone",
+    //       prLink: "https://github.com/gkhns89/insta-clone",
+    //     },
+    //     {
+    //       id: 2,
+    //       img: project3,
+    //       title: "Project 3",
+    //       description:
+    //         "I will explain here what I want to talk about the project. This project was a very successful choice to express my functions in my run. Below are some of the special methods I use.",
+    //       methods: ["redux", "axios", "react", "wordpress"],
+    //       gitLink: "https://github.com/gkhns89/insta-clone",
+    //       prLink: "https://github.com/gkhns89/insta-clone",
+    //     },
+    //     {
+    //       id: 3,
+    //       img: project4,
+    //       title: "S.S. Motaş",
+    //       description:
+    //         "I will explain here what I want to talk about the project. This project was a very successful choice to express my functions in my run. Below are some of the special methods I use.",
+    //       methods: ["Wordpress", "Visual Composer", "HTML", "php"],
+    //       gitLink: "https://github.com/gkhns89/",
+    //       prLink: "https://ssmotas.com",
+    //     },
+    //     {
+    //       id: 4,
+    //       img: project5,
+    //       title: "Cozido Burger",
+    //       description:
+    //         "I will explain here what I want to talk about the project. This project was a very successful choice to express my functions in my run. Below are some of the special methods I use.",
+    //       methods: ["Wordpress", "Visual Composer", "HTML", "php"],
+    //       gitLink: "https://github.com/gkhns89/",
+    //       prLink: "https://www.cozidoburger.com/",
+    //     },
+    //   ],
+    // },
 
     footer: {
       mainTitle: "Let’s work together on your next product.",
@@ -164,61 +165,61 @@ export const langData = {
       info: "Merhaba, ben Doğan. Full-Stack yazılımcı olmak için çalışıyorum. Eğer öğrenmeye hevesli, yeni meydan okumalara açık, yaratıcı birisini arıyorsanız, benimle iletişime geçebilirsiniz!",
     },
 
-    projects: {
-      mainTitle: "Projeler",
-      profileItems: [
-        {
-          id: 0,
-          img: project1,
-          title: "Project 1",
-          description:
-            "I will explain here what I want to talk about the project. This project was a very successful choice to express my functions in my run. Below are some of the special methods I use.",
-          methods: ["redux", "axios"],
-          gitLink: "https://github.com/gkhns89/insta-clone",
-          prLink: "https://github.com/gkhns89/insta-clone",
-        },
-        {
-          id: 1,
-          img: project2,
-          title: "Project 2",
-          description:
-            "I will explain here what I want to talk about the project. This project was a very successful choice to express my functions in my run. Below are some of the special methods I use.",
-          methods: ["redux", "axios", "react"],
-          gitLink: "https://github.com/gkhns89/insta-clone",
-          prLink: "https://github.com/gkhns89/insta-clone",
-        },
-        {
-          id: 2,
-          img: project3,
-          title: "Project 3",
-          description:
-            "I will explain here what I want to talk about the project. This project was a very successful choice to express my functions in my run. Below are some of the special methods I use.",
-          methods: ["redux", "axios", "react", "wordpress"],
-          gitLink: "https://github.com/gkhns89/insta-clone",
-          prLink: "https://github.com/gkhns89/insta-clone",
-        },
-        {
-          id: 3,
-          img: project4,
-          title: "S.S. Motaş",
-          description:
-            "I will explain here what I want to talk about the project. This project was a very successful choice to express my functions in my run. Below are some of the special methods I use.",
-          methods: ["Wordpress", "Visual Composer", "HTML", "php"],
-          gitLink: "https://github.com/gkhns89/",
-          prLink: "https://ssmotas.com",
-        },
-        {
-          id: 4,
-          img: project5,
-          title: "Cozido Burger",
-          description:
-            "I will explain here what I want to talk about the project. This project was a very successful choice to express my functions in my run. Below are some of the special methods I use.",
-          methods: ["Wordpress", "Visual Composer", "HTML", "php"],
-          gitLink: "https://github.com/gkhns89/",
-          prLink: "https://www.cozidoburger.com/",
-        },
-      ],
-    },
+    // projects: {
+    //   mainTitle: "Projeler",
+    //   profileItems: [
+    //     {
+    //       id: 0,
+    //       img: project1,
+    //       title: "Project 1",
+    //       description:
+    //         "I will explain here what I want to talk about the project. This project was a very successful choice to express my functions in my run. Below are some of the special methods I use.",
+    //       methods: ["redux", "axios"],
+    //       gitLink: "https://github.com/gkhns89/insta-clone",
+    //       prLink: "https://github.com/gkhns89/insta-clone",
+    //     },
+    //     {
+    //       id: 1,
+    //       img: project2,
+    //       title: "Project 2",
+    //       description:
+    //         "I will explain here what I want to talk about the project. This project was a very successful choice to express my functions in my run. Below are some of the special methods I use.",
+    //       methods: ["redux", "axios", "react"],
+    //       gitLink: "https://github.com/gkhns89/insta-clone",
+    //       prLink: "https://github.com/gkhns89/insta-clone",
+    //     },
+    //     {
+    //       id: 2,
+    //       img: project3,
+    //       title: "Project 3",
+    //       description:
+    //         "I will explain here what I want to talk about the project. This project was a very successful choice to express my functions in my run. Below are some of the special methods I use.",
+    //       methods: ["redux", "axios", "react", "wordpress"],
+    //       gitLink: "https://github.com/gkhns89/insta-clone",
+    //       prLink: "https://github.com/gkhns89/insta-clone",
+    //     },
+    //     {
+    //       id: 3,
+    //       img: project4,
+    //       title: "S.S. Motaş",
+    //       description:
+    //         "I will explain here what I want to talk about the project. This project was a very successful choice to express my functions in my run. Below are some of the special methods I use.",
+    //       methods: ["Wordpress", "Visual Composer", "HTML", "php"],
+    //       gitLink: "https://github.com/gkhns89/",
+    //       prLink: "https://ssmotas.com",
+    //     },
+    //     {
+    //       id: 4,
+    //       img: project5,
+    //       title: "Cozido Burger",
+    //       description:
+    //         "I will explain here what I want to talk about the project. This project was a very successful choice to express my functions in my run. Below are some of the special methods I use.",
+    //       methods: ["Wordpress", "Visual Composer", "HTML", "php"],
+    //       gitLink: "https://github.com/gkhns89/",
+    //       prLink: "https://www.cozidoburger.com/",
+    //     },
+    //   ],
+    // },
 
     footer: {
       mainTitle: "Bir sonraki projemizi birlikte yapmaya ne dersin?",
