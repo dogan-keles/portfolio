@@ -5,21 +5,6 @@ import { useContext } from "react";
 import { themeLangContext } from "../Context/Context";
 
 function Header() {
-  const [darkMode, setDarkMode] = useState(() => {
-    const savedTheme = JSON.parse(localStorage.getItem("theme"));
-    return savedTheme || "light";
-  });
-
-  useEffect(() => {
-    if (darkMode === "dark") {
-      document.body.classList.add("dark");
-    } else {
-      document.body.classList.remove("dark");
-    }
-
-    localStorage.setItem("theme", JSON.stringify(darkMode));
-  }, [darkMode]);
-
   return (
     <>
       <div className="toggle">
