@@ -2,9 +2,12 @@ import React, { useEffect } from "react";
 import { DarkModeToggle } from "@anatoliygatt/dark-mode-toggle";
 import { useState } from "react";
 import { useContext } from "react";
-import { themeLangContext } from "../Context/Context";
+import { createContext } from "react";
+import { ThemeLangContext } from "../Context/Context";
 
-function Header() {
+function Header(props) {
+  const { darkMode, setDarkMode } = useContext(ThemeLangContext);
+
   return (
     <>
       <div className="toggle">
@@ -20,7 +23,7 @@ function Header() {
           inactiveThumbColor="#FFE86E"
           activeThumbColor="#FFE86E"
           onChange={() => {
-            setDarkMode(darkMode === "dark" ? "light" : "dark");
+            setDarkMode((prevMode) => (prevMode === "dark" ? "light" : "dark"));
           }}
         />
 

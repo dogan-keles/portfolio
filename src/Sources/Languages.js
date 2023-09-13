@@ -27,13 +27,13 @@ export const langData = {
         {
           id: 1,
           title: "React.JS",
-          descr:
+          description:
             "React is an open source javascript library for creating user interfaces. React, which is being developed by a developer group led by Facebook, was created in accordance with the Model-View-Controller principle.",
         },
         {
           id: 2,
           title: "Node.JS",
-          descr:
+          description:
             "Node.js is an open source runtime environment for networked applications, typically server-side. Node.js applications are typically developed using JavaScript, a client-side scripting language.",
         },
       ],
@@ -52,8 +52,8 @@ export const langData = {
     },
 
     projects: {
-      mTitle: "Projects",
-      pItems: [
+      mainTitle: "Projects",
+      profileItems: [
         {
           id: 0,
           img: project1,
@@ -108,8 +108,8 @@ export const langData = {
     },
 
     footer: {
-      mTitle: "Let’s work together on your next product.",
-      mailAlt: "Send E-Mail to Me!",
+      mainTitle: "Let’s work together on your next product.",
+      sendEmail: "Send E-Mail to Me!",
     },
   },
 
@@ -165,8 +165,8 @@ export const langData = {
     },
 
     projects: {
-      mTitle: "Projeler",
-      pItems: [
+      mainTitle: "Projeler",
+      profileItems: [
         {
           id: 0,
           img: project1,
@@ -221,8 +221,8 @@ export const langData = {
     },
 
     footer: {
-      mTitle: "Bir sonraki projemizi birlikte yapmaya ne dersin?",
-      mailAlt: "Bana E-Posta Gönder!",
+      mainTitle: "Bir sonraki projemizi birlikte yapmaya ne dersin?",
+      sendEmail: "Bana E-Posta Gönder!",
     },
   },
 };

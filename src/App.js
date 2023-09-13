@@ -9,13 +9,6 @@ import Projects from "./components/Projects";
 import { useState } from "react";
 
 function App() {
-  // const [darkMode, setDarkMode] = useState("true");
-
-  // const modeOn = () => {
-  //   setDarkMode(!darkMode);
-  //   console.log("toggle tıklandı.", darkMode);
-  // };
-
   return (
     <div className="App">
       <Header />
