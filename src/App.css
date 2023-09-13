@@ -1,38 +1,412 @@
+:root {
+  --primary-bg: #fff;
+  --head-color: #1f2937;
+  --title-color: #4338ca;
+  --text-color: #6b7280;
+
+  --gitHub-text: #00ab6b;
+  --linkedIn-text: #0077b5;
+  --email-text: #af0c48;
+}
+body.dark {
+  --primary-bg: #252128;
+  --head-color: #aebccf;
+  --title-color: #b7aaff;
+  --text-color: #fff;
+
+  --gitHub-text: #17d18b;
+  --linkedIn-text: #0ba6f6;
+  --email-text: #bab2e7;
+}
+/** Teslimden önce Ufak Css'leri güncelle */
+
+/* ************************* */
+
 .App {
   text-align: center;
+  background-color: var(--primary-bg);
+}
+/* Header */
+.toggle {
+  display: flex;
+  justify-content: right;
+  margin-right: 150px;
+  padding-top: 4rem;
+}
+.toggle p {
+  padding-top: 5px;
+  margin-left: 10px;
+}
+/* Navbar */
+.Navbar {
+  margin: 0px 150px 0px 150px;
+  padding-top: 2.5rem;
+  display: flex;
+}
+.navbarLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 600px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+#skills,
+#projects,
+#contactLink {
+  text-decoration: none;
+  margin-left: 5rem;
+  display: inline-block;
+}
+#skills,
+#projects {
+  color: #6b7280;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#projects:hover {
+  color: #3730a3;
+  transform: scale(1.2);
 }
+#contactLink {
+  color: #3730a3;
+  border: 1px solid #3730a3;
+  border-radius: 5px;
+  padding: 10px 32px 10px 32px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  display: inline-block;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#skills:hover {
+  color: #3730a3;
+  transform: scale(1.2);
+}
+#contactLink:hover {
+  color: var(--primary-bg);
+  transform: scale(1.2);
+  background-color: #3730a3;
+}
+.logo {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  width: 64px;
+  height: 62px;
+  padding: 10px;
+  background-color: var(--primary-bg);
+  border-radius: 50px;
+  transform: rotate(30deg);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  color: #7b61ff;
+}
+/* HERO *   */
+/* HERO *  */
+/* HERO * */
+/* HERO **/
+.aboutMe {
+  text-align: left;
+}
+.line {
+  width: 102px;
+  height: 0px;
+  border: 1px solid #3730a3;
+  margin-right: 5px;
+}
+.hero-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+.hero-left {
+  margin-top: 4rem;
+}
+.hero-line p {
+  color: var(--title-color);
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+.aboutMe h1 {
+  color: var(--head-color);
+  font-family: "Inter", sans-serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px;
+  width: 596px;
+  height: 144px;
+}
+.aboutMe p {
+  width: 553px;
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-right: 300px;
+}
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  margin: 0 150px 0 150px;
+  padding-top: 6rem;
+  margin-bottom: 2rem;
+}
+.cvLinks {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+.cvLinks a {
+  margin-right: 24px;
+  text-decoration: none;
+}
+.cvLinks img {
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+}
+.gitHubLink {
+  color: #3730a3;
+  border: 1px solid #3730a3;
+  border-radius: 5px;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+.gitHubLink:hover {
+  transform: scale(1.1);
+}
+.linkedinLink {
+  color: #3730a3;
+  border: 1px solid #3730a3;
+  border-radius: 5px;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+.linkedinLink:hover {
+  transform: scale(1.1);
+}
+.hireMe {
   color: white;
+  border: 1px solid #3730a3;
+  border-radius: 5px;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #3730a3;
+}
+.hireMe:hover {
+  color: #3730a3;
+  transform: scale(1.1);
+  background-color: white;
+}
+.cvImg img {
+  max-width: 476px;
+  max-height: 375px;
+  border-radius: 18px;
+  margin-top: 6rem;
 }
 
-.App-link {
-  color: #61dafb;
+/* */
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 150px;
+  margin-right: 150px;
+  color: #6b7280;
+  padding-top: 2rem;
+}
+#skillsTitle {
+  color: var(--head-color);
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+}
+.skillList h3 {
+  height: 28px;
+  font-size: 30px;
+  color: var(--title-color);
+  font-style: normal;
+}
+.skillList {
+  display: flex;
+}
+.skillList p {
+  margin-right: 120px;
+  width: 300px;
+  color: var(--text-color);
+  height: 48px;
+  font-size: 12px;
+}
+.horizontalLine {
+  max-width: 1140px;
+  border-bottom: 2px solid #bab2e7;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profileContainer {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin: 0 150px 0 150px;
+}
+.profileTitle {
+  color: var(--head-color);
+
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3rem;
+}
+.proTitle {
+  color: var(--title-color);
+  font-family: "Inter", sans-serif;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.75rem;
+}
+.profileAbout p {
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-right: 100px;
+}
+.profileText {
+  display: flex;
+}
+.profileInfos {
+  display: flex;
+  flex-direction: column;
+}
+.birthday {
+  display: flex;
+}
+.residence {
+  display: flex;
+}
+.education {
+  display: flex;
+}
+.role {
+  display: flex;
+}
+.birthday h4 {
+  margin: 1rem 2rem 1rem 0;
+  color: var(--text-color);
+}
+.birthday p {
+  margin: 1rem 2rem 1rem 1.1rem;
+  color: var(--text-color);
+}
+.residence h4 {
+  margin: 1rem 2rem 1rem 0;
+  color: var(--text-color);
+}
+.residence p {
+  margin: 1rem 2rem 1rem 1.5rem;
+  color: var(--text-color);
+}
+.education h4 {
+  margin: 1rem 2rem 1rem 0rem;
+  color: var(--text-color);
+}
+.education p {
+  margin: 1rem 2rem 1rem 3.1rem;
+  color: var(--text-color);
+}
+.role h4 {
+  margin: 1rem 2rem 1rem 0rem;
+  color: var(--text-color);
+}
+.role p {
+  margin: 1rem 0rem 1rem 0rem;
+  color: var(--text-color);
+}
+.contactContainer {
+  width: 1440px;
+  height: 409px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-bg);
+}
+.contactContainer h3 {
+  font-family: "Inter", sans-serif;
+  margin: 85px 0px 0px 125px;
+
+  width: 540px;
+  height: 106px;
+  font-size: 42px;
+
+  color: var(--head-color);
+  line-height: 52.5px;
+}
+.emailLink {
+  display: flex;
+  flex-direction: row;
+  font-family: "Inter", sans-serif;
+  padding-left: 170px;
+  margin-top: 63px;
+}
+.emailLink a {
+  color: var(--email-text);
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+.personalLinks {
+  display: flex;
+  align-items: space;
+  justify-content: flex-end;
+}
+#blog {
+  color: var(--head-color);
+  width: 120px;
+  height: 27px;
+  size: 18px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+#github {
+  color: var(--gitHub-text);
+  width: 120px;
+  height: 27px;
+  size: 18px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+#linkedin {
+  color: var(--linkedIn-text);
+  width: 120px;
+  height: 27px;
+  size: 18px;
+  text-decoration: none;
+  padding-right: 150px;
+}
+#github:hover {
+  transform: scale(1.2);
+}
+#blog:hover {
+  transform: scale(1.2);
+}
+#linkedin:hover {
+  transform: scale(1.2);
 }
