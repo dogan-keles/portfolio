@@ -1,21 +1,25 @@
 import React, { useEffect } from "react";
 import { DarkModeToggle } from "@anatoliygatt/dark-mode-toggle";
 import { useState } from "react";
+import { useContext } from "react";
+import { themeLangContext } from "../Context/Context";
 
-function Header(props) {
-  const [darkMode, setDarkMode] = useState("dark");
+function Header() {
+  const [darkMode, setDarkMode] = useState(() => {
+    const savedTheme = JSON.parse(localStorage.getItem("theme"));
+    return savedTheme || "light";
+  });
 
-  const modeOn = () => {
-    setDarkMode(!darkMode);
-    console.log("toggle tıklandı.", darkMode);
-  };
   useEffect(() => {
     if (darkMode === "dark") {
       document.body.classList.add("dark");
     } else {
       document.body.classList.remove("dark");
     }
+
+    localStorage.setItem("theme", JSON.stringify(darkMode));
   }, [darkMode]);
+
   return (
     <>
       <div className="toggle">
@@ -40,4 +44,5 @@ function Header(props) {
     </>
   );
 }
+
 export default Header;
