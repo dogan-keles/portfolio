@@ -6,14 +6,15 @@ import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
-
+import { ToastContainer, toast, Slide } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <div className="App">
+      <ToastContainer limit={1} transition={Slide} />
       <Header />
       <Navbar />
       <Hero />
-
       <Skills />
       <Profile />
       <Projects />

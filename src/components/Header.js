@@ -1,15 +1,16 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { DarkModeToggle } from "@anatoliygatt/dark-mode-toggle";
 import { useContext } from "react";
 import { ThemeLangContext } from "../Context/Context";
-import { langData } from "../Sources/Languages";
+
 function Header(props) {
-  const { darkMode, setDarkMode, lang, text, setLang, handleSwitch } =
+  const { darkMode, setDarkMode, text, handleSwitch } =
     useContext(ThemeLangContext);
 
   return (
     <div className="header">
       <div className="toggle">
+        <p>{text.header.mode[0]}</p>
         <DarkModeToggle
           mode={darkMode}
           size="sm"
@@ -26,10 +27,12 @@ function Header(props) {
           }}
         />
 
-        <p>GECE MODU |</p>
+        <p>{text.header.mode[1]} </p>
+        <p>|</p>
 
         <button className="lang" onClick={handleSwitch}>
           {text.header.langSwitchBtn[0]}
+          {text.header.to}
         </button>
       </div>
     </div>

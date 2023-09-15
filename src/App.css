@@ -40,7 +40,8 @@ body.dark {
 }
 .toggle p {
   padding-top: 5px;
-  margin-left: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .lang {
   margin-left: 10px;
@@ -230,7 +231,7 @@ body.dark {
 /* */
 .skillsContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-align: left;
   margin-left: 150px;
   margin-right: 150px;
@@ -250,9 +251,14 @@ body.dark {
   font-size: 30px;
   color: var(--title-color);
   font-style: normal;
+  margin-bottom: 2rem;
 }
 .skillList {
+  padding-bottom: 2rem;
+}
+.skillItem {
   display: flex;
+  flex-direction: row;
 }
 .skillList p {
   margin-right: 120px;
@@ -260,6 +266,7 @@ body.dark {
   color: var(--text-color);
   height: 48px;
   font-size: 12px;
+  padding-top: 2rem;
 }
 .horizontalLine {
   max-width: 1140px;
@@ -351,6 +358,17 @@ body.dark {
   margin: 1rem 0rem 1rem 0rem;
   color: var(--text-color);
 }
+.projects-container {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 2rem;
+  justify-content: center;
+}
+#projects-section h1 {
+  padding-left: 150px;
+  padding-right: 150px;
+  text-align: left;
+}
 .contactContainer {
   width: 1440px;
   height: 409px;
@@ -420,3 +438,11 @@ body.dark {
 #linkedin:hover {
   transform: scale(1.2);
 }
+/* @media (min-width: 420px) {
+  header {
+    color: red;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+} */

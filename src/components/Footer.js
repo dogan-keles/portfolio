@@ -1,9 +1,12 @@
 import React from "react";
+import { useContext } from "react";
+import { ThemeLangContext } from "../Context/Context";
 
 function Footer() {
+  const { text } = useContext(ThemeLangContext);
   return (
     <div className="contactContainer">
-      <h3>Let’s work together on your next product.</h3>
+      <h3>{text.footer.mainTitle}</h3>
       <div className="contactLinks">
         <div className="emailLink">
           <img src="./icons/isaretparmagi.svg" />

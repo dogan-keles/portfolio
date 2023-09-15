@@ -1,35 +1,26 @@
 import React from "react";
+import { useContext } from "react";
+import { ThemeLangContext } from "../Context/Context";
 
 function Skills() {
+  const { text, Lang, setLang } = useContext(ThemeLangContext);
+
   return (
     <>
+      <h2 id="skillsTitle">Skills</h2>
       <div className="skillsContainer">
-        <div>
-          <h2 id="skillsTitle">Skills</h2>
-        </div>
-        <div className="skillList">
-          <div className="javascript-text">
-            <h3>Java Script</h3>
-            <p>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-          <div className="react-text">
-            <h3>React.Js</h3>
-            <p>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-          <div className="nodejs-text">
-            <h3>Node.Js</h3>
-            <p>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
+        {text.skills.skillList.map((skill, i) => {
+          return (
+            <div className="skillItem">
+              <div key={skill.id} className="skillList">
+                <h3> {text.skills.skillList[i].title}</h3>
+                <div className="skillDescription">
+                  {text.skills.skillList[i].description}{" "}
+                </div>
+              </div>
+            </div>
+          );
+        })}
         <div className="horizontalLine"></div>
       </div>
     </>
